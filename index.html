@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Método Accent | Aprenda Inglês de Forma Rápida e Eficiente</title>
+  <meta name="description" content="Curso de inglês Método Accent de Igor Amaral. Aprenda de forma prática e rápida com técnicas inovadoras e comprovadas." />
+  <meta name="keywords" content="curso de inglês, método accent, aprender inglês, inglês rápido, inglês fluente" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --primary: #0d47a1; /* Azul */
+      --secondary: #fbc02d; /* Amarelo */
+      --dark: #121212;
+      --light: #f9f9f9;
+      --hover: #c2185b;
+      --shadow: rgba(0, 0, 0, 0.3);
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: var(--dark);
+      color: var(--light);
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      padding: 100px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      color: var(--light);
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      color: #d1ecf1;
+    }
+
+    .btn {
+      background-color: var(--secondary);
+      color: #fff;
+      font-weight: bold;
+      padding: 15px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 30px;
+      box-shadow: 0 4px 15px var(--shadow);
+      transition: 0.3s;
+      transform: translateY(0);
+    }
+
+    .btn:hover {
+      background-color: var(--hover);
+      transform: translateY(-5px);
+    }
+
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+      animation: slideUp 1.5s ease-in-out;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: var(--secondary);
+    }
+
+    .grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 20px;
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      box-shadow: 0 0 20px var(--shadow);
+      transition: 0.3s;
+      animation: boxIn 1s ease-in-out;
+    }
+
+    .box:hover {
+      box-shadow: 0 0 30px var(--secondary);
+      transform: translateY(-5px);
+    }
+
+    .box h3 {
+      font-size: 1.6rem;
+      color: var(--secondary);
+      margin-bottom: 15px;
+    }
+
+    .box p {
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    .testimonial {
+      background: #202020;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-style: italic;
+      transition: transform 0.3s ease;
+      border: 3px solid var(--secondary); /* Borda amarela */
+      animation: pulse 1.5s infinite ease-in-out; /* Efeito de pulsação */
+    }
+
+    .testimonial strong {
+      display: block;
+      font-weight: bold;
+      color: var(--secondary);
+    }
+
+    .testimonial:hover {
+      transform: scale(1.05);
+    }
+
+    .teacher-info {
+      background-color: #1f1f1f;
+      padding: 40px;
+      border-radius: 8px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .teacher-info img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .teacher-info h2 {
+      color: var(--secondary);
+      font-size: 28px;
+    }
+
+    .teacher-info p {
+      font-size: 18px;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes boxIn {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+
+      .section h2 {
+        font-size: 2rem;
+      }
+
+      .grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Método Accent</h1>
+    <p>Aprenda inglês de maneira rápida e prática com o método de Igor Amaral!</p>
+    <a href="#comprar" class="btn">Quero Começar Agora</a>
+  </header>
+
+  <section id="benefits" class="section">
+    <h2>Por que escolher o Método Accent?</h2>
+    <div class="grid">
+      <div class="box">
+        <h3>📚 Aulas Diretas e Eficientes</h3>
+        <p>Ensinamentos práticos para aprender rapidamente, sem enrolação.</p>
+      </div>
+      <div class="box">
+        <h3>🧠 Método Científico</h3>
+        <p>Baseado em estudos comprovados para garantir resultados rápidos.</p>
+      </div>
+      <div class="box">
+        <h3>🚀 Acesso Imediato</h3>
+        <p>Comece sua jornada no inglês agora mesmo com acesso imediato ao conteúdo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="section">
+    <h2>O que nossos alunos dizem</h2>
+    <div class="testimonial">
+      <strong>João Silva – Fluente após 6 meses</strong>
+      <p>"O Método Accent realmente funciona. Hoje falo inglês com confiança!"</p>
+    </div>
+    <div class="testimonial">
+      <strong>Ana Souza – Aprendeu a falar do zero</strong>
+      <p>"Nunca imaginei aprender inglês tão rápido e de forma tão fácil. Super recomendo!"</p>
+    </div>
+  </section>
+
+  <section id="teacher" class="section">
+    <h2>Conheça seu Teacher</h2>
+    <div class="teacher-info">
+      <img src="igor.png" alt="Igor Amaral" />
+      <h2>Prazer, Igor Amaral!</h2>
+      <p>Hello there! Eu sou Igor Amaral, há quase 10 anos, tive acesso a diversas técnicas usadas por experts em pronúncia inglesa da Inglaterra, Bósnia, Estados Unidos e Escócia, que me ajudaram a criar um método que me permitiu evoluir no inglês como nunca imaginei, sem precisar ficar aprendendo toda aquela gramática complicada que os cursos tentam ensinar.</p>
+      <p>E hoje vou te mostrar o método que ajudou a mim e a mais de 12.000 pessoas.</p>
+    </div>
+  </section>
+
+  <section id="comprar" class="section">
+    <h2>Garanta Seu Acesso ao Método Accent!</h2>
+    <p>🎓 Invista no seu futuro e comece a falar inglês hoje mesmo por apenas R$97,00 ou em 10x de R$10,03.</p>
+    <a href="https://pay.kiwify.com.br/quHUlxP?afid=oXOgB0S3" class="btn">Adquirir Agora por R$97</a>
+    <p><strong>Ou 10x de R$10,03</strong></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Método Accent | Transformando seu inglês com confiança.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-back',
+      duration: 1000,
+      once: true,
+    });
+  </script>
+</body>
+
+</html>
